@@ -8,8 +8,13 @@ let age = 51;
 const myName = "Wagonkey";
 
 
-mattsFunction(age, myName)
+function mattsFunction(currAge, name){
+  //The 51 year old Wagonkey is the best!
+  console.log(`The ${currAge} year old ${name} is the best!`)
+  // console.log("The ", age, " year old ", myName, " is the best!")
+}
 
+mattsFunction(age, myName)
 function happyBirthday(){
   //in memory somewhere 51,51,51,51,etc
   age++
@@ -26,3 +31,6 @@ console.log(age)
 // mattsFunction(happyBirthday(age) ,myName)
 
 // happyBirthday() 
+
+// let myParagraphElement = document.querySelector('p');
+// console.log("Here we are:", myParagraphElement);
