@@ -2,4 +2,4 @@
 
 Read me
 Day one of Fundamentals. 
-Updated the Teacher Branch
+glory be to js?
