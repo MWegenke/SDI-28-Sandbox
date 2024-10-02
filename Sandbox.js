@@ -31,3 +31,5 @@ console.log(age)
 // mattsFunction(happyBirthday(age) ,myName)
 
 // happyBirthday() 
+
+console.log("some javascript");
