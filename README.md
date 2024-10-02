@@ -1,5 +1,5 @@
 # SDI-28-Sandbox
 
 Read me
-Day one of Fundamentals. 
-Updated the Teacher Branch
+Day one of Fundamentals.
+No one likes the Teacher (Branch)
