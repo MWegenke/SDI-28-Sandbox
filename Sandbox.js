@@ -31,3 +31,6 @@ console.log(age)
 // mattsFunction(happyBirthday(age) ,myName)
 
 // happyBirthday() 
+
+var testVar
+var testVar2
