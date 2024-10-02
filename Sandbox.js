@@ -27,15 +27,19 @@
 
 // mattsFunction(happyBirthday(age) ,myName)
 
+
+////////////////////////// LEARNING WITH STRINGS ///////////////////////////////
 let Name = "andrew";
 
-function reverso(str){
+function reverseUno(str){
   //parses the string out creating an array
   var stringSplit = str.split("")
   //reverses the array
   var arrayReverse = stringSplit.reverse()
+  //joins all the elements in the array back into a string
   var arrayJoin = arrayReverse.join("")
   return arrayJoin
 }
+console.log(reverseUno(Name));
 
-console.log(reverso(Name));
+/////////////////////////////////////////////////////////////////////////////////////
