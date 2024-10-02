@@ -3,9 +3,9 @@
 
 // age = 51;
 
-let age = 51;
+// let age = 51;
 
-const myName = "Wagonkey";
+// const myName = "Wagonkey";
 
 
 function mattsFunction(currAge, name){
@@ -20,13 +20,10 @@ function happyBirthday(){
   age++
 }
 
-happyBirthday()
-happyBirthday()
-happyBirthday()
-happyBirthday()
-happyBirthday()
+// happyBirthday() 
 
-console.log(age)
+
+// console.log(age)
 
 // mattsFunction(happyBirthday(age) ,myName)
 
@@ -34,3 +31,15 @@ console.log(age)
 
 // let myParagraphElement = document.querySelector('p');
 // console.log("Here we are:", myParagraphElement);
+let Name = "andrew";
+
+function reverso(str){
+  //parses the string out creating an array
+  var stringSplit = str.split("")
+  //reverses the array
+  var arrayReverse = stringSplit.reverse()
+  var arrayJoin = arrayReverse.join("")
+  return arrayJoin
+}
+
+console.log(reverso(Name));
