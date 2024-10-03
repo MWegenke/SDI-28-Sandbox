@@ -33,3 +33,21 @@ console.log(age)
 // happyBirthday() 
 
 console.log("some javascript");
+
+if(NaN){
+  console.log('Is true')
+}else{
+  console.log('Is falsy')
+}
+
+// var number = 0
+
+// for (var i = 0; i < 10; i++) {
+//   number++;
+//   console.log(number);
+// }
+
+for (var i = 1; i < 10; i++) {
+  let x = i * .5;
+  console.log(x);
+}
