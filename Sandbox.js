@@ -55,3 +55,22 @@
 //   }
 //   return wins;
 // };
+
+let lotto = [
+	{name: "John", numbers: [6, 5, 3, 11, 34]},
+	{name: "Steve", numbers: [9, 15, 13, 21, 14]}
+]
+
+const getNums = (arr) => {
+  let allNums = [];
+  debugger
+  for(let elm of arr){
+    for(let num of elm.numbers){
+      allNums.push(num);
+    }
+  }
+  console.log(allNums);
+  return allNums;
+}
+
+getNums(lotto);
