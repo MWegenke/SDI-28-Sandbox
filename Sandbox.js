@@ -30,4 +30,28 @@ console.log(age)
 
 // mattsFunction(happyBirthday(age) ,myName)
 
-// happyBirthday() 
+// happyBirthday()
+
+// Rock paper scissors game
+const rps = (p1, p2) => {
+  var who = true;
+  var wins;
+  if(p1 === p2){
+    wins = "Draw!"
+  } else {
+    if(p1 === "scissors" && p2 === "rock"){
+      who = false;
+    } else if(p1 === "paper" && p2 === "scissors"){
+      who = false;
+    } else if(p1 === "rock" && p2 === "paper"){
+      who = false;
+    }
+    if (who){
+      wins = "Player 1 won!"
+    }
+    else if(!who){
+      wins = "Player 2 won!"
+    }
+  }
+  return wins;
+};
