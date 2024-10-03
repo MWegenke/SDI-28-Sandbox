@@ -1,4 +1,4 @@
-//OBJECT FUNDAMENTALS
+//3OCT24 OBJECT FUNDAMENTALS:
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -69,4 +69,53 @@
 // /* Expected Output:
 // => J.R.R Tolkien
 // */
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//THE FOR LOOP VS THE FOR...OF LOOP FOR ITERATING OVER AN ARRAY:
+
+// let array = ["dog", "cat", "fish"];
+
+// for(let index = 0; index < array.length; index++){
+//   console.log(array[index]);
+// }
+
+// //FOR...OF:
+// for(let [index, animal] of array.entries()){
+// 	console.log(index, animal)
+// }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//ITERATING OVER NESTED ARRAYS:
+
+//     //this is an array that shows each apartment on each floor of an apartment building
+// const apartments = [ ["001", "002", "003", "004", "005"], ["101", "102", "103", "104", "105"], ["201", "202", "203", '204', "205"], ["301", "302", "303", "304", "305"] ];
+
+//     //this logs the inner arrays (floors), but not individual apartments
+// for(let index = 0; index < apartments.length; index++){
+//   console.log(apartments[index]);
+// }
+
+//     //this accesses each apartment and adds the letter A to the number
+// for(let floorIndex = 0; floorIndex < apartments.length; floorIndex++){
+//   for(let aptIndex = 0; aptIndex < apartments[floorIndex].length; aptIndex++){
+//       apartments[floorIndex][aptIndex] = "A" + apartments[floorIndex][aptIndex];
+//   }
+// }
+// console.log(apartments);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//ADD TO BACK OF AN ARRAY:
+function addToBack(arr, element) {
+  // your code here
+
+ arr.push(element);
+ return arr
+
+}
+
+var output = addToBack([1, 2], 3);
+console.log(output); // -> [1, 2, 3]
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
