@@ -1,33 +1,13 @@
-//JavaScript Fundamentals I
-// var age;
+ndo
 
-// age = 51;
-
-// let age = 51;
-
-// const myName = "Wagonkey";
-
-
-// function mattsFunction(currAge, name){
-//   //The 51 year old Wagonkey is the best!
-//   console.log(`The ${currAge} year old ${name} is the best!`)
-//   // console.log("The ", age, " year old ", myName, " is the best!")
-// }
-
-// mattsFunction(age, myName)
-// function happyBirthday(){
-//   //in memory somewhere 51,51,51,51,etc
-//   age++
-// }
-
-// happyBirthday() 
+// happyBirthday()
 
 
 // console.log(age)
 
 // mattsFunction(happyBirthday(age) ,myName)
 
-// happyBirthday() 
+// happyBirthday()
 
 // let myParagraphElement = document.querySelector('p');
 // console.log("Here we are:", myParagraphElement);
