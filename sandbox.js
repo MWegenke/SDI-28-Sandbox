@@ -74,6 +74,8 @@
 
 //Loop through what
 
-for(let i = 1; i <= 10; i++ ){
-  console.log(`Current count : ${i}`)
-}
+// for(let i = 1; i <= 10; i++ ){
+//   console.log(`Current count : ${i}`)
+// }
+
+console.log(if(5 == 5) console.log("5"));
