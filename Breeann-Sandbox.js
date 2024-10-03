@@ -107,15 +107,37 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //ADD TO BACK OF AN ARRAY:
-function addToBack(arr, element) {
-  // your code here
+// function addToBack(arr, element) {
+//   // your code here
 
- arr.push(element);
- return arr
+//  arr.push(element);
+//  return arr
 
-}
+// }
 
-var output = addToBack([1, 2], 3);
-console.log(output); // -> [1, 2, 3]
+// var output = addToBack([1, 2], 3);
+// console.log(output); // -> [1, 2, 3]
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//ARROW FUNCTION SYNTAX
+//arrow functions take out the length and make functions less complex
+//Compare!
+
+// //not arrow function:
+// function canDrive(person) {
+//   return person.age > 15;
+// }
+
+// //       VS
+
+// //wordy arrow function:
+// const canDrive = (person) => {
+//   return person.age > 15;
+// };
+
+// //        VS
+
+// //Concise arrow function:
+// const canDrive = person => person.age > 15;
+
