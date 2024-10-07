@@ -210,3 +210,21 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//PUTTING IT ALL TOGETHER:
+
+// //Ex:
+// /*Chain Array's reduce, map, and filter methods (or at least two of them)
+//  to reduce the input array of student data to an average age of the entire class.*/
+//
+//  const students = [
+//   { name: "Stephen", age: 24 },
+//   { name: "Alice", age: 19 },
+//   { name: "Jordan", age: 29 },
+//   { name: "Julie", age: 21 },
+//   { name: "Chris", age: 26 }
+// ]
+//
+// let averageAge = students.map(student => student.age) // Extract ages
+// .reduce((sum, age) => sum + age, 0) // Sum the ages
+// / students.length; // Divide by the total number of students
+// console.log(averageAge); // Output: 23.8
