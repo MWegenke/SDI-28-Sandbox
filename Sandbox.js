@@ -75,3 +75,28 @@
 // }
 
 // getNums(lotto);
+
+// Using document API functions, when given the following HTML, create a new variable as a <p> HTML element called
+// "paragraphElement" and append it to the div with the id "infoParagraphContainer".
+// Set the innerHTML on the paragraphElement to say "Here at Galvanize, we're here to equip students for the future!"
+
+// <body>
+//   <div id="aboutMe" >
+//     <h3>Learn more about our company:</h3>
+//     <div id="infoParagraphContainer" ></div>
+//   </div>
+// </body>
+
+// let paragraphElement = document.createElement('p');
+// let paragraphContainer = docmuent.querySelector('#infoParagraphContainer');
+// paragraphContainer.appendChild(paragraphElement);
+// paragraphElement.innerHTML = "Here at Galvanize, we're here to equip students for the future!"
+
+//and using only innerHTML on the infoParagraphContainer div
+
+var paragraphElementString = `<p>Here at Galvanize, we're here to equip students for the future!</p>`;
+var paragraphContainer = document.querySelector('#infoParagraphContainer');
+
+paragraphContainer.innerHTML = paragraphElementString;
+
+
