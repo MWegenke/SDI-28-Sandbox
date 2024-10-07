@@ -1,4 +1,4 @@
-//3OCT24 OBJECT FUNDAMENTALS:
+//03OCT24 OBJECT FUNDAMENTALS:
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -122,7 +122,7 @@
 
 //ARROW FUNCTION SYNTAX
 //arrow functions take out the length and make functions less complex
-//Compare!
+//Compare!:
 
 // //not arrow function:
 // function canDrive(person) {
@@ -140,4 +140,73 @@
 
 // //Concise arrow function:
 // const canDrive = person => person.age > 15;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//07OCT2024 JS FUNDAMENTALS III:
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// //THE MAP METHOD:
+
+// /*Creates a new array that's the same size as the original array.
+// Applies a function to each element of the original array.
+// Pushes the return value of the function into the new array.*/
+
+
+// const arr = [1, 2, 3, 4];
+// const squares = arr.map(function(element) {
+//   return element * element;
+// });
+// console.log(squares); // [1, 4, 9, 16]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// //THE FILTER METHOD:
+
+// /*iterates over an existing array and allows us to filter (keep)
+// only the elements from that array which pass a certain logical comparison (condition).
+// The filter method automatically returns an array with only those elements.*/
+
+//Ex:
+// let names = ["Bob", "Tom", "Ben", "John", "Ted", "Todd"];
+// let tNames = names.filter(name => name.charAt(0) == "T");
+// console.log(tNames); // ["Tom", "Ted", "Todd"]
+
+//Ex:
+// const arr = [1, 2, 3, 4];
+// const odds = arr.filter(element => {
+//   return element % 2 !== 0;
+// });
+// console.log(odds); // [1, 3]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//THE FIND METHOD:
+/* The first element which passes the comparison, is returned as the end result of the find method.*/
+
+//Ex:
+// let names = ["Bob", "Tom", "Ben", "John", "Ted", "Todd"];
+// let tNames = names.find(name => name.charAt(0) == "T");
+// console.log(tNames); // "Tom"
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// //THE REDUCE METHOD:
+
+// //Ex:
+// const arr = [1, 2, 3, 4];
+
+// const sum = arr.reduce(function(result, element) {
+//   return result + element;
+// }, 0);
+
+// const product = arr.reduce(function(result, element) {
+//   return result * element;
+// }, 1);
+
+// console.log(sum);     // 10
+// console.log(product); // 24
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
