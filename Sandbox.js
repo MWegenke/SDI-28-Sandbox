@@ -94,9 +94,7 @@
 
 //and using only innerHTML on the infoParagraphContainer div
 
-var paragraphElementString = `<p>Here at Galvanize, we're here to equip students for the future!</p>`;
-var paragraphContainer = document.querySelector('#infoParagraphContainer');
+// var paragraphElementString = `<p>Here at Galvanize, we're here to equip students for the future!</p>`;
+// var paragraphContainer = document.querySelector('#infoParagraphContainer');
 
-paragraphContainer.innerHTML = paragraphElementString;
-
-
+// paragraphContainer.innerHTML = paragraphElementString;
