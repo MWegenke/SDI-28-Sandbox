@@ -134,9 +134,6 @@
 //   //Write a function that uses fetch to return a Promise that resolves to the _JavaScript_ array of *all posts*.
 //           return fetch('https://my.fake-blog-api.com/posts')
 //           .then((response) => response.json())
-//           .catch((error) => {
-//               console.error(error);
-//           });
 //   }
 
 //LOCAL STORAGE
@@ -148,18 +145,3 @@
 //localStorage.removeItem("key");
 //REMOVE ALL
 //localStorage.clear();
-
-
-// fetch('https://pokeapi.co/api/v2/pokemon/ditto', (err, data) => {
-//     console.log("number 1 " + data)
-// }).catch(error => {console.log("number 1 " + error)})
-
-console.log('a')
-setTimeout(() => {
-    console.log('b')
-    setTimeout(() => {
-        console.log('c')
-    }, 10)
-}, 3000)
-console.log('d')
-setTimeout(() => {console.log('e')}, 1000)
