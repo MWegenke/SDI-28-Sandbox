@@ -96,5 +96,70 @@
 
 // var paragraphElementString = `<p>Here at Galvanize, we're here to equip students for the future!</p>`;
 // var paragraphContainer = document.querySelector('#infoParagraphContainer');
-
 // paragraphContainer.innerHTML = paragraphElementString;
+
+//POST request syntax
+
+// let newPost = {
+//   userId: 1,
+//   title: "My post",
+//   body: "This is my first post"
+// };
+
+// fetch("https://jsonplaceholder.typicode.com/posts", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json"
+//   },
+//   body: JSON.stringify(newPost)
+// })
+//   .then((rawResponse) => {
+//     if (!rawResponse.ok) {
+//       throw new Error(
+//         `code: ${rawResponse.status}, status text: ${rawResponse.statusText}`
+//       );
+//     }
+//     return rawResponse.json();
+//   })
+//   .then((jsonifiedResponse) =>
+//     console.log("Jsonified data: ", jsonifiedResponse)
+//   )
+//   .catch((error) => console.log(error));
+
+//FETCH guide
+// https://jsonplaceholder.typicode.com/guide/
+
+//FETCH get
+// function getAllPosts() {
+//   //Write a function that uses fetch to return a Promise that resolves to the _JavaScript_ array of *all posts*.
+//           return fetch('https://my.fake-blog-api.com/posts')
+//           .then((response) => response.json())
+//           .catch((error) => {
+//               console.error(error);
+//           });
+//   }
+
+//LOCAL STORAGE
+//ADD
+//localStorage.setItem("key", "value");
+//GET
+//localStorage.getItem("key")
+//REMOVE
+//localStorage.removeItem("key");
+//REMOVE ALL
+//localStorage.clear();
+
+
+// fetch('https://pokeapi.co/api/v2/pokemon/ditto', (err, data) => {
+//     console.log("number 1 " + data)
+// }).catch(error => {console.log("number 1 " + error)})
+
+console.log('a')
+setTimeout(() => {
+    console.log('b')
+    setTimeout(() => {
+        console.log('c')
+    }, 10)
+}, 3000)
+console.log('d')
+setTimeout(() => {console.log('e')}, 1000)
