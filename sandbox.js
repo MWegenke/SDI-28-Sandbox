@@ -74,6 +74,60 @@
 
 //Loop through what
 
-for(let i = 1; i <= 10; i++ ){
-  console.log(`Current count : ${i}`)
+// for(let i = 1; i <= 10; i++ ){
+//   console.log(`Current count : ${i}`)
+// }
+
+//OOP - Object Oriented Programming
+let decisionMaking = "DECIDING"
+class Vehicle {
+  //make, model, color, year, numDoors, numPassangers, engineType
+  constructor(make, model, color, year, numDoors, numPassangers, engineType = "Bubbles"){
+    this.make = make
+    this.model = model
+    this.color = color
+    this.year = year
+    this.numDoors = numDoors
+    this.numPassangers = numPassangers
+    this.engineType = engineType
+  }
+
+  start(){
+    console.log("Engine is runnin")
+  }
+
+  honk(){
+    console.log("Big Azz Beep")
+  }
 }
+
+class Car extends Vehicle{
+  constructor(make, model, color, year, engineType = "bubbles", heatedSeats, doorType="butterfly"){
+    super(make, model, color, year, 2, 4, engineType)
+    this.heatedSeats = heatedSeats
+    this.doorType = doorType
+  }
+
+
+  honk(){
+    console.log("Adorable Toot")
+  }
+
+  shutOff(){
+    console.log("Shut'er down Gerald!")
+  }
+
+  rollCall(){
+    console.log(make, " ---- ", this.model)
+  }
+}
+
+// let dumpTruck = new Vehicle("Tonka", "Dump Truck", "Yellow", 1995, 2, 2, "V16 toddle Power")
+// let towTruck = new Vehicle("Tower", "McPulls", "Brown", 2002, 1, 0, "Hearts and Minds")
+
+let hoopdee = new Car("Chevy", "Barretta", "Red", 1988, "V6 tried hard", false, "worked")
+let luxery = new Car("Dodge", '', decisionMaking, 1996, "Flinstone 350CC", decisionMaking)
+
+console.log(hoopdee)
+// console.log(luxery)
+hoopdee.rollCall()
