@@ -146,3 +146,19 @@
 //REMOVE ALL
 //localStorage.clear();
 
+//.call/.apply execute the function immediatly .bind creates a function for later use
+
+// class Car {
+//     constructor(horsepower){
+//         this.horsepower = horsepower;
+//     };
+//     static checkIfFast(carInstance) {
+//         if(carInstance.horsepower > 300) {
+//             return true;
+//         };
+//         return false;
+//     }
+// };
+// const maserati = new Car(500);
+// maserati.checkIfFast();
+
