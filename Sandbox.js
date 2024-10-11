@@ -465,9 +465,407 @@
 // fizz()
 
 //JAVASCRIPT FUNDAMENTALS II CHECKPOINT
-//13
-const cityState = (city, state) => {
-    return `${city} is in ${state}`;
-}
-//ar output = cityState()
-console.log(cityState());
+// //13
+// const cityState = (city, state) => {
+//     return `${city} is in ${state}`;
+// }
+// //ar output = cityState()
+// console.log(cityState());
+
+
+//DAY 6
+//October 7, 2024
+//SPREAD PRACTICE: Javascript Fundamentals III "'CLEAN' Javascript"
+// var newObject = {
+//     id: 1,
+//     username: "connor",
+//     coding: true
+// }
+
+// console.log(newObject);
+
+// var newerObject = Object.assign(
+//     {},
+//     newOb
+//     {username: "Taberski"}
+// )
+
+// console.log(newerObject);
+
+// var newestObject = {
+//     ...newerObject,
+//     username: "James"
+// }
+
+// console.log(newestObject);
+
+// var {coding, ...laterObject} = newestObject;
+
+// console.log(laterObject);
+
+// var {coding, ...latestObject} = {
+//     ...newObject,
+//     username: "Taberski"
+// }
+
+// console.log(latestObject);
+
+// var user = {
+//     name: "Stacy",
+//     relation: "Mom",
+//     emotion: "Love"
+// }
+
+// var userEr = {
+//     ...user,
+//     property: "Got it goin on"
+// };
+
+// console.log(user);
+// console.log(userEr);
+
+//SPEAD OPERATOR IN A FUNCTION: Javascript Fundamentals III "'Clean' Javascript"
+// function printAnimal(singleParameter) {
+//     console.log(singleParameter);
+// }
+
+// printAnimal("dog", "cat", "fish");
+
+// function printAnimals(...multipleParameter) {
+//     console.log(multipleParameter);
+// }
+
+// printAnimals("dog", "cat", "fish");
+
+// //CREATE NEW FUNCTIONS with FUNCTIONS
+// function greaterThan(n) {
+//     return m => m > n;
+//   }
+//   let greaterThan10 = greaterThan(10);
+//   console.log(greaterThan10(11));
+//   // → true
+
+// //FOREACH HOF: Javascript Fundamentals III "Higher Order Functions"
+// var arr = [1, 2, 3, 4];
+
+// arr.forEach(function(element) {
+//     console.log(element);
+// });
+
+// //MAP HOF: Javascript Fundamentals III "Higher Order Functions"
+// let count = 0;
+// var multiplied = arr.map((num) => {
+//     count++;
+//     console.log(count);
+//     return num * 2;
+// });
+
+// console.log(multiplied);
+// console.log(count);
+
+// //FILTER PRACTICE: Javascript Fundamentals III "Higher Order Functions"
+// var arr = [1, 2, 3, 4, 5, 6, 7];
+// var odds = arr.filter(element => {
+//     return element % 2 !== 0;
+// });
+
+// console.log(odds);
+
+// //FIND PRACTICE: Javascript Fundamentals III "Higher Order Functions"
+// let names = ["Bob", "Tom", "Ben", "John", "Ted", "Todd"];
+
+// let tNames = names.find(name => name.charAt(0) == "T");
+
+// console.log(tNames); // "Tom"
+
+//QUESTION 5: Javascript Fundamentals III "HIGHER ORDER FUNCTIONS"
+// const students = [
+//     { name: "Stephen", age: 24 },
+//     { name: "Alice", age: 19 },
+//     { name: "Jordan", age: 29 },
+//     { name: "Julie", age: 21 },
+//     { name: "Chris", age: 26 }
+// ]
+
+// let averageAge = (students.map(element => {
+//     return element.age;
+// }).reduce((age, sum) => {
+//     return age + sum;
+// }, 0)) / students.length;
+
+// console.log(averageAge);
+
+// // //SUM of AGES (students.map(element => {
+// //     return element.age;
+// // }).reduce(element, sum) => {
+// //    // return element + sum
+// //    //}, 0) / students.length
+
+//    function createArray(array) {
+//     var array = [];
+//     for (var i = 0; i < array.length; i++) {
+//         array.push[i.age]
+//     }
+//     return array;
+//    }
+
+// //OOP in Javascript: Introduction
+// class Cat {
+//     constructor(breed, age, gender) {
+//         this.breed = breed;
+//         this.age = age;
+//         this.gender = gender;
+//     }
+// }
+
+// var callie = new Cat("Domestic Shorthair", 7, "Female");
+// console.log(callie);
+
+// class Car {
+//     constructor(speed) {
+//     this.fuel = 0;
+//     this.distance = 0;
+//     this.speed = speed
+//     }
+//     move() {
+//         if(this.fuel < 1) {
+//             throw new RangeError('Fuel tank is empty')
+//         }
+//         this.fuel--
+//         this.distance += 2
+//     }
+//     addFuel() {
+//         if(this.fuel >= 60) {
+//             throw new RangeError('Fuel tank is full')
+//         }
+//         this.fuel++
+//     }
+    
+// }
+
+// var myCar = new Car(60)
+// console.log(myCar);
+// // myCar.addFuel()
+// // console.log(myCar)
+// // myCar.move()
+// // console.log(myCar)
+// // myCar.move()
+// // console.log(myCar)
+// // //myCar.move()
+
+// class Prius extends Car {
+//     constructor(speed) {
+//         super(speed * 2)
+//     }
+//     move() {
+//         super.move()
+//         this.distance += 4
+//     }
+// }
+
+// var myPrius = new Prius(60)
+// console.log(myPrius);
+// // myPrius.addFuel()
+// // console.log(myPrius)
+// // myPrius.move()
+// // console.log(myPrius)
+// // myPrius.move()
+// // console.log(myPrius)
+// // myPrius.move()
+
+// console.log(myPrius instanceof Prius)
+// console.log(myCar instanceof Car)
+// console.log(myPrius instanceof Car)
+// console.log(myCar instanceof Prius)
+
+//OOP in Javascript: This
+// const bob = {
+//     name: 'Bob Weir'
+//     greet: function() {
+//         return `Hi I am ${this.name}`
+//     }
+// }
+
+// const jerry = {
+//     name: 'Jerry Seinfeld'
+//     greet: bob.greet
+// }
+
+// const result = jerry.greet()
+// console.log(result)
+
+// let person = {
+//     name:'Jack Bauer',
+//     printName: function(){
+//       console.log(person.name) // reference to the 'person' object
+//     }
+//   }
+  
+//   person.printName() // prints 'Jack Bauer'
+
+//   let human = person;
+// person = {}
+// human.printName();
+
+// let person = {
+//     name:'Jack Bauer',
+//      printName: function(){
+//       console.log(this.name)
+//     }
+//   }
+  
+//   person.printName()   // prints 'Jack Bauer'
+  
+//   let human = person;  // set `human` to reference `person`
+//   person = {}          // set `person` to reference a new object.
+//   human.printName();   // prints 'Jack Bauer'
+
+//OOP in Javascript: This Question 9
+// const employee = {
+//     name: 'Bob',
+//     salary: 60000,
+//     raiseSalary: function(amount) {
+//         this.salary += amount
+//         console.log(this.salary)
+//     }
+//   }
+
+//   employee.raiseSalary(20000)
+
+//OOP in Javascript: This Question 10a
+// const coordinates = {
+//     x: 2,
+//     y: 5,
+//     getPosition() {
+//       return `${this.x}, ${this.y}`
+//     }
+//   }
+  
+//   const retrievePosition = coordinates.getPosition();
+//   console.log(retrievePosition)
+
+//OOP in Javascript: Static Methods
+//   class User {
+//     static StaticPrinter() {
+//         console.log('Static method has been called')
+//     }
+//   }
+
+//   User.StaticPrinter();
+
+//   var newPrint = new User();
+//   newUser.staticPrinter();
+
+//OOP in Javascript: Static Methods Question 4
+// class Car {
+//     constructor (make, model, maxSpeed) {
+//       this.make = make
+//       this.model = model
+//       this.maxSpeed = maxSpeed
+//     }
+  
+//     move (location) {
+//       console.log(`Speeding along to ${location}`);
+//     }
+  
+//     description () {
+//       console.log(`${this.make} ${this.model}`)
+//     }
+      
+//     increaseMaxSpeed(speedIncrease) {
+//       this.maxSpeed += speedIncrease
+//     }
+//     static isCar(newCar) {
+//         return newCar instanceof Car
+//     }
+//   }
+
+
+// var newCar = new Car("Toyota", "Tacoma", 140)
+// console.log(Car.isCar(newCar))
+// var randomObject = {};
+// console.log(Car.isCar(randomObject));
+
+// class Classroom {
+//     constructor(count) {
+//         this.count = count;
+//     };
+//     addStudents(num) {
+//         this.count += num;
+//     };
+// };
+// const classOne = new Classroom(20);
+// const classOneCopy = classOne;
+// classOneCopy.addStudents(10);
+// classOne.addStudents(5);
+// classOne.addStudents(10);
+// classOneCopy.addStudents(10);
+// console.log(classOne.count)
+
+// class Dog {
+//     constructor(breed, name) {
+//         this.breed = breed;
+//         this.name = name;
+//     };
+//     bark(numberOfTimes) {
+//         console.log(`${this.name}, a ${this.breed}, barks ${numberOfTimes} times!`)
+//     };
+// }
+// class ToyDog extends Dog {
+//     constructor(breed, name) {
+//         super(breed, name);
+//     };
+//     bark(numberOfTimes) {
+//        console.log(`${this.name}, a very small and cute ${this.breed}, barks ${numberOfTimes} times!`)
+//     };
+// }
+// class HerdingDog extends Dog {
+//     constructor(breed, name) {
+//         super(breed, name);
+//     };
+// }
+// const pomeranian = new ToyDog('Pomeranian', 'Sausage');
+// const corgi = new Dog('Corgi', 'Stump');
+// const collie = new HerdingDog('Rough Collie', 'Lassie');
+// pomeranian.bark(3);
+// corgi.bark(4);
+// collie.bark(5);
+
+//OOP in Javascript Checkpoint Question 8
+// class Car {
+//     #horsepower;
+//     constructor(make, model, horsepower) {
+//         this.make = make;
+//         this.model = model;
+//         this.#horsepower = horsepower;
+//     }
+//     setTune() {
+//         this.#horsepower *= 1.2;
+//     }
+// }
+// const amg = new Car('Mercedes', 'AMG GT 63', 577);
+// console.log(amg.(#horsepower));
+
+class Car {
+    #price;
+    constructor(make, model, horsepower, price) {
+        this.make = make;
+        this.model = model;
+        this.horsepower = horsepower;
+        this.#price = price;
+    };
+    get carPrice() {
+        console.log(this.#price)
+        return this.#price;
+        
+    };
+    set carPrice(newPrice) {
+        this.#price = newPrice;
+        console.log(this.#price)
+        return this.#price;
+    };
+};
+
+const huayra = new Car('Pagani', 'Huayra', 764, 2400000);
+
+huayra.carPrice = 2600000
