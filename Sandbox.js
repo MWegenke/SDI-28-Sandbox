@@ -162,3 +162,18 @@
 // const maserati = new Car(500);
 // maserati.checkIfFast();
 
+// HOW TO VITE:
+// https://vite.dev/guide/
+// 1. run command: npm create vite@latest
+// 2. Project name: yourSuperAwesomeAppName
+//  a. If asked for package name: give it one
+// 3. Select a framework: React
+//  a. You will need to use arrow keys to make selection
+//    i. If for some reason your arrow keys are not arrowing, this is due to your console not being interactive. VS Code's terminal should be able to do this. If still no, then reach out to one of us to help you.
+// 4. Select a variant: JavaScript
+//  a. Again use arrow keys to arrow
+// 5. NPM will now do its job and give you the following steps.
+//   a. cd yourSuperAwesomeAppName
+//    i. Alternate command to run for the above cd command:  code youSuperAwesomeAppName
+//   b. npm install
+//   c. npm run dev
