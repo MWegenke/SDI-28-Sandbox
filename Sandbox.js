@@ -175,5 +175,69 @@
 // 5. NPM will now do its job and give you the following steps.
 //   a. cd yourSuperAwesomeAppName
 //    i. Alternate command to run for the above cd command:  code youSuperAwesomeAppName
-//   b. npm install
+//   b. npm i
 //   c. npm run dev
+// EASE OF USE OPTIONS
+// vite.config.js
+// export default defineConfig({
+//   plugins: [react()],
+//   server:{
+//     port:3000,
+//     open:true
+//   }
+// })
+// package.json
+// change:
+// "dev":"vite",
+// to:
+// "start":"vite",
+
+// ROUTING
+// import './App.css';
+
+// import { Marines } from './Components/Marines';
+// import { Ussf } from './Components/Ussf';
+// import { Usaf } from './Components/Usaf';
+// import { Navy } from './Components/Usn';
+
+// import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+// const names = ['ussf', 'usaf', 'usn', 'usmc']
+// const components = [<Ussf />, <Usaf />, <Navy />, <Marines />]
+
+// let fullLink = []
+
+// for(let i = 0; i < names.length; i++){
+//   fullLink.push({name:names[i], component:components[i]})
+// }
+
+// function App() {
+
+//   return (
+//     <>
+//       <ul>
+//         {fullLink.map(link =>
+//         <li>
+//           <Link to={link.name}>
+//             {link.name}
+//           </Link>
+//         </li>)}
+//       </ul>
+//       {/* <li>
+//           <Link to='/'>HOME</Link>
+//       </li> */}
+//      <Router> This can be moved to home file
+//       <Routes>
+//         {/* <Route path='/navy' element={<Navy />} /> */}
+//         <Route key='home' path='/' element={<h1>YOU ARE HOME</h1>} />
+//         {fullLink.map(link => <Route key={link.name} path={`/${link.name}`} element={link.component} />)}
+//       </Routes>
+//      </Router>
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+
