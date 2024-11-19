@@ -248,3 +248,21 @@
 // psql -U postgres
 // \c <database name>
 
+// KNEX SETUP
+// npm init -y
+// npm i express pg knex
+// npx knex init
+// replace inside knexfile.js
+// development: {
+//   client: 'pg',
+//   connection: process.env.DB_CONNECTION_STRING
+//   // replace USER_NAME, USER_PASSWORD, and DATABASE_NAME with your Docker PostgreSQL container's username, password and an *empty* database
+//   // that you have created on your Docker PostgreSQL container volume
+// },
+// touch .gitignore and add
+//   node_modules/
+//   .env
+// touch .env and add
+
+//   DB_CONNECTION_STRING=postgres://[username]:[password]@[url]:[port]/[database name]
+//postgres:docker@localhost/pet_store
